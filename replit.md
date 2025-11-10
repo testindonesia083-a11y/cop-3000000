@@ -55,11 +55,28 @@ The project is configured for Replit's autoscale deployment:
 - No build step required
 
 ## Recent Changes (November 10, 2025)
-1. **Text Update**: Changed "SUPER OFERTA" to "ESCOLHA SEU PACOTE:"
-2. **Button Animation**: Added pulsing animation to "COMPRAR AGORA" buttons using existing pulseGlow keyframes
-3. **Image Replacement**: Replaced main GIF banner with new static image (image_1762811901028.png)
-4. **Review Stars Fix**: Added CSS styling to display star ratings in testimonials section (gold stars, 18px)
-5. **Background Color**: Changed APOSTILA COP 30 section background to light yellow (#FFF4B0) for better visibility
+
+### Latest Updates - All Tasks Completed ✅
+1. **Hero Image Restored**: Reverted "Atividades e conteúdos exclusivos" section to original animated GIF (Gif-PV-COP-30.gif)
+2. **Extended Yellow Background**: CSS added to extend #FFF4B0 background across entire section 4d63732
+3. **Gabarito Image Updated**: Replaced image below "Gabarito incluso" with image_1762812634794.png
+4. **FAQ Accordion Arrows**: Added Font Awesome chevron icons (▼/▲) to FAQ accordion with rotation animation
+5. **Bonus Carousel Navigation**: Added styled navigation arrows (◄/►) to bonus content carousel
+6. **Star Ratings Fixed**: Ensured all testimonial stars display in yellow (#FFB642) across all review sections
+7. **7-Day Money-Back Guarantee**: New prominent section with gradient background (#FFB642-#FF8C42) inserted before "VEJA COMO É SIMPLES O ACESSO!"
+8. **Installment Payment Info**: 
+   - Pacote Básico: "ou 3x de R$ 4,97"
+   - Pacote Completo: "ou 6x de R$ 4,98"
+9. **Enhanced Complete Package**: Added 8 benefits including:
+   - Suporte Personalizado
+   - Bônus Exclusivos (3 materiais)
+   - Atualizações Gratuitas
+   - Certificado Digital
+   - Material Editável (Word)
+   - Suporte por WhatsApp
+   - Acesso VITALÍCIO
+10. **Smooth Scroll Functionality**: All "COMPRAR AGORA" buttons now smoothly scroll to package selection (#pacotes)
+11. **Responsive Design**: Mobile-optimized CSS for pricing cards, installment text, and all interactive elements
 
 ## Notes
 - This is a **static export** - no backend functionality or WordPress features are available
