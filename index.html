@@ -368,6 +368,45 @@ button#place_order {
     animation: slideBackForth 2s ease-in-out infinite;
     display: inline-block;
 }
+
+/* Animação para o botão de CTA */
+@keyframes pulseGlow {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(255, 182, 66, 0.5);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px rgba(255, 182, 66, 0.8);
+    }
+}
+
+.animated-cta-button {
+    animation: pulseGlow 2s ease-in-out infinite;
+    display: inline-block;
+    background: linear-gradient(135deg, #FFB642 0%, #FF8C42 100%);
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: #000 !important;
+}
+
+/* Esconder a seção de dúvidas sobre o material */
+.elementor-element-0adb383 {
+    display: none !important;
+}
+
+/* Esconder o botão flutuante do WhatsApp */
+.chaty-widget,
+#chaty-widget,
+[class*="chaty"],
+[id*="chaty"] {
+    display: none !important;
+}
+
+/* Mudar cor de fundo da seção "O QUE VOCÊ VAI ENCONTRAR NO MATERIAL..." para azul claro */
+.elementor-element-0a13b39 {
+    background: linear-gradient(135deg, #87CEEB 0%, #B0E0E6 100%) !important;
+}
 </style>
                 <noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /><style id="rocket-lazyrender-inline-css">[data-wpr-lazyrender] {content-visibility: auto;}</style><style id="wpr-lazyload-bg-container"></style><style id="wpr-lazyload-bg-exclusion"></style>
 <noscript>
@@ -381,7 +420,7 @@ button#place_order {
                 <div class="elementor-element elementor-element-cf0d9ef e-con-full e-flex e-con e-child" data-id="cf0d9ef" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
                                 <div class="elementor-element elementor-element-0bbb8aa elementor-widget elementor-widget-heading" data-id="0bbb8aa" data-element_type="widget" data-widget_type="heading.default">
                                 <div class="elementor-widget-container">
-                                        <h2 class="elementor-heading-title elementor-size-default">APROVEITE A OFERTA LIMITADA<br><span id="current-date"></span></h2>                               </div>
+                                        <h2 class="elementor-heading-title elementor-size-default">APROVEITE ESSA OFERTA ATÉ: 10/11</h2>                               </div>
                                 </div>
                                 </div>
                                         </div>
@@ -393,7 +432,7 @@ button#place_order {
                                 </div>
                                 <div  class="elementor-element elementor-element-ed85ce5 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="ed85ce5" data-element_type="widget" data-widget_type="heading.default">
                                 <div class="elementor-widget-container">
-                                        <h2 class="elementor-heading-title elementor-size-default">Atividades e conteúdos exclusivos para trabalhar a <b>COP 30</b> com seus alunos!</h2>                               </div>
+                                        <h2 class="elementor-heading-title elementor-size-default animated-cta-button">Atividades e conteúdos exclusivos para trabalhar a <b>COP 30</b> com seus alunos!</h2>                               </div>
                                 </div>
                                 </div>
                 <div class="elementor-element elementor-element-4d63732 e-con-full e-flex e-con e-parent" data-id="4d63732" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_bottom&quot;:&quot;torn-paper&quot;,&quot;shape_divider_top&quot;:&quot;torn-paper&quot;,&quot;_ha_eqh_enable&quot;:false}">
