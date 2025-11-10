@@ -409,6 +409,60 @@ button#place_order {
     background-color: #FFF4B0 !important;
 }
 
+/* Estender fundo amarelo para toda a seção "Atividades e conteúdos exclusivos" */
+.elementor-element-4d63732 {
+    background-color: #FFF4B0 !important;
+}
+
+/* Setas do FAQ - Accordion */
+.elementor-accordion .elementor-accordion-item .elementor-tab-title:after {
+    content: '\f107' !important;
+    font-family: 'Font Awesome 5 Free' !important;
+    font-weight: 900 !important;
+    color: #FFB642 !important;
+    font-size: 20px !important;
+    position: absolute !important;
+    right: 20px !important;
+    transition: transform 0.3s ease !important;
+}
+
+.elementor-accordion .elementor-accordion-item.elementor-active .elementor-tab-title:after {
+    transform: rotate(180deg) !important;
+}
+
+/* Setas do carrossel de bônus */
+.elementor-swiper-button {
+    background-color: rgba(255, 182, 66, 0.9) !important;
+    color: #000 !important;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.elementor-swiper-button:hover {
+    background-color: #FFB642 !important;
+}
+
+.elementor-swiper-button svg {
+    width: 20px !important;
+    height: 20px !important;
+    fill: #000 !important;
+}
+
+/* Garantir que todas as estrelas apareçam amarelas */
+.ha-review-ratting--star i,
+.star-rating i,
+.rating-stars i,
+[class*="star"] i.fa-star,
+[class*="rating"] i.fa-star {
+    color: #FFB642 !important;
+    font-size: 18px !important;
+    display: inline-block !important;
+}
+
 /* Esconder a seção de dúvidas sobre o material */
 .elementor-element-0adb383 {
     display: none !important;
@@ -648,6 +702,7 @@ button#place_order {
     
     .cop30-offer-card {
         max-width: 100%;
+        padding: 30px 20px;
     }
     
     .cop30-offer-premium {
@@ -660,6 +715,27 @@ button#place_order {
     
     .cop30-currency {
         font-size: 28px;
+    }
+    
+    /* Texto de parcelamento responsivo */
+    .cop30-offer-card p {
+        font-size: 14px !important;
+        line-height: 1.4 !important;
+        margin: 10px 0 !important;
+        padding: 0 5px !important;
+    }
+    
+    .cop30-features-list li {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    
+    .cop30-offer-title {
+        font-size: 28px;
+    }
+    
+    .cop30-offer-title span {
+        font-size: 32px;
     }
 }
 </style>
@@ -1027,7 +1103,7 @@ button#place_order {
                 </div>
                                 <div  class="elementor-element elementor-element-4d44d48 elementor-widget elementor-widget-image" data-id="4d44d48" data-element_type="widget" data-widget_type="image.default">
                                 <div class="elementor-widget-container">
-                                                                                                                        <img fetchpriority="high" decoding="async" width="1080" height="1080" src="attached_assets/image_1762811901028.png" class="attachment-full size-full wp-image-4455" alt="" />                                                                                                                     </div>
+                                                                                                                        <img fetchpriority="high" decoding="async" width="1080" height="1080" src="https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/Gif-PV-COP-30.gif?fit=1080%2C1080&ssl=1" class="attachment-full size-full wp-image-4455" alt="" />                                                                                                                     </div>
                                 </div>
                 <div class="elementor-element elementor-element-7351269 e-con-full e-flex e-con e-child" data-id="7351269" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
                                 <div class="elementor-element elementor-element-c54e6da elementor-align-center elementor-widget-mobile__width-inherit elementor-button-success elementor-widget elementor-widget-button" data-id="c54e6da" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="button.default">
@@ -1389,7 +1465,7 @@ button#place_order {
                                 </div>
                                 <div class="elementor-element elementor-element-822e191 elementor-widget elementor-widget-image" data-id="822e191" data-element_type="widget" data-widget_type="image.default">
                                 <div class="elementor-widget-container">
-                                                                                                                        <img decoding="async" width="800" height="800" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20800'%3E%3C/svg%3E" class="attachment-full size-full wp-image-4450" alt="" data-lazy-srcset="https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/COP-site.png?w=800&amp;ssl=1 800w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/COP-site.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/COP-site.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/COP-site.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/COP-site.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/COP-site.png?resize=100%2C100&amp;ssl=1 100w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/COP-site.png?fit=800%2C800&#038;ssl=1" /><noscript><img decoding="async" width="800" height="800" src="https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/COP-site.png?fit=800%2C800&amp;ssl=1" class="attachment-full size-full wp-image-4450" alt="" srcset="https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/COP-site.png?w=800&amp;ssl=1 800w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/COP-site.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/COP-site.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/COP-site.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/COP-site.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/COP-site.png?resize=100%2C100&amp;ssl=1 100w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>                                                                                                                        </div>
+                                                                                                                        <img decoding="async" width="800" height="800" src="attached_assets/image_1762812634794.png" class="attachment-full size-full wp-image-4450" alt="" />                                                                                                                        </div>
                                 </div>
                                 <div class="elementor-element elementor-element-c276c66 elementor-widget elementor-widget-text-editor" data-id="c276c66" data-element_type="widget" data-widget_type="text-editor.default">
                                 <div class="elementor-widget-container">
@@ -1502,7 +1578,7 @@ button#place_order {
                                 <div class="elementor-widget-container">
                                         <h2 class="elementor-heading-title elementor-size-default">ESCOLHA SEU PACOTE:</h2>                            </div>
                                 </div>
-<div class="cop30-offers-container"><div class="cop30-offer-card cop30-offer-basic"><div class="cop30-offer-badge">💚</div><h3 class="cop30-offer-title">Pacote COP 30<br><span>Simples</span></h3><div class="cop30-price-container"><span class="cop30-currency">R$</span><span class="cop30-price">14,90</span></div><ul class="cop30-features-list"><li>✓ Garantia de 7 dias</li><li>✓ Acesso por 6 meses</li><li>✗ Sem bônus extras</li></ul><a href="https://checkout.doppus.app/55547072" class="cop30-cta-button cop30-basic-btn"><span>QUERO ESTE PACOTE</span></a></div><div class="cop30-offer-card cop30-offer-premium"><div class="cop30-popular-badge">🌟 MAIS ESCOLHIDO!</div><div class="cop30-offer-badge">🌳</div><h3 class="cop30-offer-title">Pacote COP 30<br><span>COMPLETO</span></h3><div class="cop30-price-container"><span class="cop30-currency">R$</span><span class="cop30-price">29,90</span></div><ul class="cop30-features-list"><li>✓ Garantia de 7 dias</li><li>✓ Suporte Personalizado</li><li>✓ Acesso VITALÍCIO</li><li>✓ Bônus Exclusivos</li></ul><a href="https://checkout.doppus.app/55547072" class="cop30-cta-button cop30-premium-btn"><span>🎁 QUERO O COMPLETO!</span></a></div></div>
+<div class="cop30-offers-container" id="pacotes"><div class="cop30-offer-card cop30-offer-basic"><div class="cop30-offer-badge">💚</div><h3 class="cop30-offer-title">Pacote COP 30<br><span>Simples</span></h3><div class="cop30-price-container"><span class="cop30-currency">R$</span><span class="cop30-price">14,90</span></div><p style="text-align: center; font-size: 14px; color: #666; margin: 10px 0;">ou <strong style="color: #4CAF50;">3x de R$ 4,97</strong></p><ul class="cop30-features-list"><li>✓ Garantia de 7 dias</li><li>✓ Acesso por 6 meses</li><li>✓ Atividades completas COP 30</li><li>✓ Gabarito incluso</li><li>✗ Sem bônus extras</li></ul><a href="https://checkout.doppus.app/55547072" class="cop30-cta-button cop30-basic-btn"><span>QUERO ESTE PACOTE</span></a></div><div class="cop30-offer-card cop30-offer-premium"><div class="cop30-popular-badge">🌟 MAIS ESCOLHIDO!</div><div class="cop30-offer-badge">🌳</div><h3 class="cop30-offer-title">Pacote COP 30<br><span>COMPLETO</span></h3><div class="cop30-price-container"><span class="cop30-currency">R$</span><span class="cop30-price">29,90</span></div><p style="text-align: center; font-size: 14px; color: #666; margin: 10px 0;">ou <strong style="color: #4CAF50;">6x de R$ 4,98</strong></p><ul class="cop30-features-list"><li>✓ Garantia de 7 dias</li><li>✓ Suporte Personalizado</li><li>✓ Acesso VITALÍCIO</li><li>✓ Bônus Exclusivos (3 materiais)</li><li>✓ Atualizações Gratuitas</li><li>✓ Certificado Digital</li><li>✓ Material Editável (Word)</li><li>✓ Suporte por WhatsApp</li></ul><a href="https://checkout.doppus.app/55547072" class="cop30-cta-button cop30-premium-btn"><span>🎁 QUERO O COMPLETO!</span></a></div></div>
                                 <div class="elementor-element elementor-element-bba1196 elementor-widget__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-image" data-id="bba1196" data-element_type="widget" data-widget_type="image.default">
                                 <div class="elementor-widget-container">
                                                                                                                         <img decoding="async" width="800" height="800" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20800'%3E%3C/svg%3E" class="attachment-full size-full wp-image-4451" alt="" data-lazy-srcset="https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?w=800&amp;ssl=1 800w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?resize=100%2C100&amp;ssl=1 100w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?fit=800%2C800&#038;ssl=1" /><noscript><img decoding="async" width="800" height="800" src="https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?fit=800%2C800&amp;ssl=1" class="attachment-full size-full wp-image-4451" alt="" srcset="https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?w=800&amp;ssl=1 800w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?resize=100%2C100&amp;ssl=1 100w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>                                                                                                                        </div>
@@ -2182,6 +2258,38 @@ document.addEventListener("DOMContentLoaded", function() {
         const options = { day: "numeric", month: "long", year: "numeric" };
         const formattedDate = today.toLocaleDateString("pt-BR", options);
         dateElement.textContent = formattedDate;
+    }
+    
+    // Scroll suave para seção de pacotes ao clicar em QUALQUER botão "COMPRAR AGORA"
+    document.querySelectorAll('.elementor-button').forEach(function(btn) {
+        const btnText = btn.textContent.trim().toUpperCase();
+        if (btnText.includes('COMPRAR AGORA')) {
+            btn.addEventListener('click', function(e) {
+                const pacotesSection = document.getElementById('pacotes');
+                if (pacotesSection) {
+                    e.preventDefault();
+                    pacotesSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            });
+        }
+    });
+    
+    // Adicionar seção de Garantia de 7 dias
+    const vejaComoSection = document.querySelector('.elementor-element-f980f3b');
+    if (vejaComoSection) {
+        const garantiaHTML = `
+            <div class="elementor-element e-flex e-con-boxed e-con e-parent" style="background: linear-gradient(135deg, #FFB642 0%, #FF8C42 100%); padding: 60px 20px; margin-bottom: 0;">
+                <div class="e-con-inner" style="max-width: 1200px; margin: 0 auto; text-align: center;">
+                    <div class="elementor-widget elementor-widget-heading">
+                        <div class="elementor-widget-container">
+                            <h2 style="font-family: 'Bubblegum Sans', cursive; font-size: 42px; color: #000; margin-bottom: 20px;">🛡️ GARANTIA DE 7 DIAS 🛡️</h2>
+                            <p style="font-size: 20px; color: #000; max-width: 800px; margin: 0 auto; line-height: 1.6; font-weight: 500;">Você tem <strong>7 dias</strong> para experimentar a Apostila COP 30 e se não gostar, devolvemos <strong>100% do seu dinheiro na hora</strong>, sem perguntas! Sua satisfação é nossa prioridade. Compre agora com total segurança!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+        vejaComoSection.insertAdjacentHTML('beforebegin', garantiaHTML);
     }
 });
 </script>
