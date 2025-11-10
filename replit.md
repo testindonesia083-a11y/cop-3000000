@@ -12,6 +12,8 @@ This project is a static HTML export of a WordPress page about COP 30 (Conferenc
 ## Project Structure
 ```
 .
+├── attached_assets/     # User-uploaded images and assets
+│   └── image_1762811901028.png  # COP 30 banner image
 ├── index.html          # Main HTML file (exported WordPress page)
 ├── .gitignore          # Python-related ignore patterns
 └── replit.md           # This documentation file
@@ -52,8 +54,16 @@ The project is configured for Replit's autoscale deployment:
 - **Command**: `python -m http.server 5000`
 - No build step required
 
+## Recent Changes (November 10, 2025)
+1. **Text Update**: Changed "SUPER OFERTA" to "ESCOLHA SEU PACOTE:"
+2. **Button Animation**: Added pulsing animation to "COMPRAR AGORA" buttons using existing pulseGlow keyframes
+3. **Image Replacement**: Replaced main GIF banner with new static image (image_1762811901028.png)
+4. **Review Stars Fix**: Added CSS styling to display star ratings in testimonials section (gold stars, 18px)
+5. **Background Color**: Changed APOSTILA COP 30 section background to light yellow (#FFF4B0) for better visibility
+
 ## Notes
 - This is a **static export** - no backend functionality or WordPress features are available
 - Some interactive WordPress features (forms, comments, etc.) may not work as expected
 - The page is optimized for display only, not for editing
 - JavaScript console may show errors from WordPress plugins attempting to make API calls
+- All custom styles are in the `<style id="custom-cop30-styles">` section of index.html
