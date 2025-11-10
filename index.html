@@ -407,6 +407,242 @@ button#place_order {
 .elementor-element-0a13b39 {
     background: linear-gradient(135deg, #87CEEB 0%, #B0E0E6 100%) !important;
 }
+
+/* Esconder conteúdo antigo da seção SUPER OFERTA */
+.elementor-element-bba1196,
+.elementor-element-65287c4,
+.elementor-element-c7772f2,
+.elementor-element-cfc37c0,
+.elementor-element-8798aaa {
+    display: none !important;
+}
+
+/* Container dos cards de ofertas */
+.cop30-offers-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card de oferta base */
+.cop30-offer-card {
+    background: white;
+    border-radius: 30px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    position: relative;
+    transition: all 0.4s ease;
+    border: 5px solid #4CAF50;
+}
+
+.cop30-offer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+}
+
+/* Badge de emoji no topo do card */
+.cop30-offer-badge {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Título da oferta */
+.cop30-offer-title {
+    font-family: 'Bubblegum Sans', cursive !important;
+    font-size: 32px;
+    text-align: center;
+    color: #2E7D32;
+    margin: 0 0 20px 0;
+    line-height: 1.3;
+}
+
+.cop30-offer-title span {
+    color: #FF6B35;
+    font-size: 36px;
+    display: block;
+    font-weight: bold;
+}
+
+/* Container de preço */
+.cop30-price-container {
+    text-align: center;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cop30-currency {
+    font-family: 'Bubblegum Sans', cursive !important;
+    font-size: 36px;
+    color: #2E7D32;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.cop30-price {
+    font-family: 'Bubblegum Sans', cursive !important;
+    font-size: 72px;
+    color: #FF6B35;
+    font-weight: bold;
+    line-height: 1;
+}
+
+/* Lista de features */
+.cop30-features-list {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.cop30-features-list li {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 18px;
+    padding: 12px 0;
+    color: #333;
+    border-bottom: 2px dashed #E0E0E0;
+}
+
+.cop30-features-list li:last-child {
+    border-bottom: none;
+}
+
+/* Botões CTA */
+.cop30-cta-button {
+    display: block;
+    width: 100%;
+    padding: 20px 30px;
+    background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+    color: white !important;
+    text-align: center;
+    font-family: 'Bubblegum Sans', cursive !important;
+    font-size: 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.4);
+    transition: all 0.3s ease;
+    margin-top: 30px;
+}
+
+.cop30-cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(76, 175, 80, 0.6);
+}
+
+/* Oferta Básica */
+.cop30-offer-basic {
+    border-color: #81C784;
+}
+
+.cop30-basic-btn {
+    background: linear-gradient(135deg, #81C784 0%, #66BB6A 100%);
+}
+
+/* Oferta Premium (DESTAQUE) */
+.cop30-offer-premium {
+    border: 5px solid #FFD700;
+    transform: scale(1.05);
+    z-index: 10;
+    background: linear-gradient(135deg, #FFF9E6 0%, #FFFFFF 50%);
+    animation: premiumGlow 2s ease-in-out infinite;
+}
+
+@keyframes premiumGlow {
+    0%, 100% {
+        box-shadow: 0 10px 40px rgba(255, 215, 0, 0.4);
+    }
+    50% {
+        box-shadow: 0 15px 60px rgba(255, 215, 0, 0.7);
+    }
+}
+
+.cop30-popular-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #000;
+    font-family: 'Bubblegum Sans', cursive !important;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.5);
+    font-weight: bold;
+    animation: wiggle 1.5s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: translateX(-50%) rotate(-3deg);
+    }
+    50% {
+        transform: translateX(-50%) rotate(3deg);
+    }
+}
+
+.cop30-premium-btn {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #000 !important;
+    animation: pulsePremium 2s ease-in-out infinite;
+}
+
+@keyframes pulsePremium {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.cop30-premium-btn:hover {
+    transform: scale(1.1) !important;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .cop30-offers-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .cop30-offer-card {
+        max-width: 100%;
+    }
+    
+    .cop30-offer-premium {
+        transform: scale(1);
+    }
+    
+    .cop30-price {
+        font-size: 60px;
+    }
+    
+    .cop30-currency {
+        font-size: 28px;
+    }
+}
 </style>
                 <noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /><style id="rocket-lazyrender-inline-css">[data-wpr-lazyrender] {content-visibility: auto;}</style><style id="wpr-lazyload-bg-container"></style><style id="wpr-lazyload-bg-exclusion"></style>
 <noscript>
@@ -1247,6 +1483,7 @@ button#place_order {
                                 <div class="elementor-widget-container">
                                         <h2 class="elementor-heading-title elementor-size-default">SUPER OFERTA</h2>                            </div>
                                 </div>
+<div class="cop30-offers-container"><div class="cop30-offer-card cop30-offer-basic"><div class="cop30-offer-badge">💚</div><h3 class="cop30-offer-title">Pacote COP 30<br><span>Simples</span></h3><div class="cop30-price-container"><span class="cop30-currency">R$</span><span class="cop30-price">14,90</span></div><ul class="cop30-features-list"><li>✓ Garantia de 7 dias</li><li>✓ Acesso por 6 meses</li><li>✗ Sem bônus extras</li></ul><a href="https://checkout.doppus.app/55547072" class="cop30-cta-button cop30-basic-btn"><span>QUERO ESTE PACOTE</span></a></div><div class="cop30-offer-card cop30-offer-premium"><div class="cop30-popular-badge">🌟 MAIS ESCOLHIDO!</div><div class="cop30-offer-badge">🌳</div><h3 class="cop30-offer-title">Pacote COP 30<br><span>COMPLETO</span></h3><div class="cop30-price-container"><span class="cop30-currency">R$</span><span class="cop30-price">29,90</span></div><ul class="cop30-features-list"><li>✓ Garantia de 7 dias</li><li>✓ Suporte Personalizado</li><li>✓ Acesso VITALÍCIO</li><li>✓ Bônus Exclusivos</li></ul><a href="https://checkout.doppus.app/55547072" class="cop30-cta-button cop30-premium-btn"><span>🎁 QUERO O COMPLETO!</span></a></div></div>
                                 <div class="elementor-element elementor-element-bba1196 elementor-widget__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-image" data-id="bba1196" data-element_type="widget" data-widget_type="image.default">
                                 <div class="elementor-widget-container">
                                                                                                                         <img decoding="async" width="800" height="800" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20800'%3E%3C/svg%3E" class="attachment-full size-full wp-image-4451" alt="" data-lazy-srcset="https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?w=800&amp;ssl=1 800w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?resize=100%2C100&amp;ssl=1 100w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?fit=800%2C800&#038;ssl=1" /><noscript><img decoding="async" width="800" height="800" src="https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?fit=800%2C800&amp;ssl=1" class="attachment-full size-full wp-image-4451" alt="" srcset="https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?w=800&amp;ssl=1 800w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/08/1080x1080-Cop-30.jpg?resize=100%2C100&amp;ssl=1 100w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>                                                                                                                        </div>
