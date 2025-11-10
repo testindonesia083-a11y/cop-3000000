@@ -738,6 +738,295 @@ button#place_order {
         font-size: 32px;
     }
 }
+
+/* ========================================
+   POPUP DE COMPRA - NOTIFICAÇÕES
+   ======================================== */
+.purchase-popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #FFFFFF 0%, #F5F5F5 100%);
+    border: 3px solid #4CAF50;
+    border-radius: 15px;
+    padding: 15px 20px;
+    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+    z-index: 999999;
+    min-width: 320px;
+    max-width: 380px;
+    animation: slideInRight 0.5s ease-out, popupPulse 2s ease-in-out infinite;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes popupPulse {
+    0%, 100% {
+        box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+    }
+    50% {
+        box-shadow: 0 12px 35px rgba(76, 175, 80, 0.5);
+    }
+}
+
+.purchase-popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #666;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.purchase-popup-close:hover {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.purchase-popup-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-right: 30px;
+}
+
+.purchase-popup-icon {
+    font-size: 32px;
+    margin-right: 12px;
+}
+
+.purchase-popup-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2E7D32;
+    margin: 0;
+}
+
+.purchase-popup-content {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.purchase-popup-name {
+    font-weight: 700;
+    color: #FF6B35;
+}
+
+.purchase-popup-location {
+    color: #666;
+    font-size: 13px;
+}
+
+.purchase-popup-product {
+    background: linear-gradient(135deg, #FFF4B0 0%, #FFE082 100%);
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin: 8px 0;
+    font-weight: 600;
+    color: #333;
+    font-size: 13px;
+}
+
+.purchase-popup-time {
+    font-size: 12px;
+    color: #999;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* Responsivo popup */
+@media (max-width: 768px) {
+    .purchase-popup {
+        top: 10px;
+        right: 10px;
+        left: 10px;
+        min-width: auto;
+        max-width: none;
+    }
+}
+
+/* ========================================
+   SEÇÃO DE BÔNUS MELHORADA
+   ======================================== */
+.bonus-section {
+    background: linear-gradient(135deg, #E8F5E9 0%, #F1F8E9 100%);
+    padding: 60px 20px;
+    margin: 40px 0;
+    border-radius: 20px;
+}
+
+.bonus-title {
+    text-align: center;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 42px;
+    color: #2E7D32;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.bonus-subtitle {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.bonus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bonus-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 3px solid #4CAF50;
+}
+
+.bonus-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(76, 175, 80, 0.3);
+}
+
+.bonus-card-icon {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bonus-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.bonus-card-title {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 24px;
+    color: #2E7D32;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.bonus-card-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #666;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.bonus-value-badge {
+    background: linear-gradient(135deg, #FFB642 0%, #FF8C42 100%);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* ========================================
+   SEÇÃO CONTEÚDO COP30 MELHORADA
+   ======================================== */
+.cop30-content-section {
+    background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+    padding: 40px 30px;
+    border-radius: 20px;
+    margin: 30px 0;
+}
+
+.cop30-content-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cop30-content-item {
+    background: white;
+    padding: 20px 25px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border-left: 5px solid #4CAF50;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.cop30-content-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 6px 15px rgba(76, 175, 80, 0.2);
+}
+
+.cop30-content-item-icon {
+    font-size: 24px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.cop30-content-item-title {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 20px;
+    color: #2E7D32;
+    font-weight: bold;
+    margin: 0;
+    display: inline;
+}
+
+.cop30-content-item-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #666;
+    margin-top: 8px;
+    line-height: 1.6;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .bonus-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .bonus-title {
+        font-size: 32px;
+    }
+    
+    .cop30-content-item {
+        padding: 15px 20px;
+    }
+    
+    .cop30-content-item-title {
+        font-size: 18px;
+    }
+}
 </style>
                 <noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /><style id="rocket-lazyrender-inline-css">[data-wpr-lazyrender] {content-visibility: auto;}</style><style id="wpr-lazyload-bg-container"></style><style id="wpr-lazyload-bg-exclusion"></style>
 <noscript>
@@ -1461,7 +1750,43 @@ button#place_order {
                                 </div>
                                 <div class="elementor-element elementor-element-42c38c2 elementor-widget elementor-widget-text-editor" data-id="42c38c2" data-element_type="widget" data-widget_type="text-editor.default">
                                 <div class="elementor-widget-container">
-                                                                        <p style="text-align: left;"><strong data-start="924" data-end="961"><span style="color: #000000;"><b>_ </b></span>Explicação completa sobre a COP30</strong> – Linguagem acessível e diversos conteúdos sobre a COP 30.<br data-start="998" data-end="1001" /><strong data-start="1003" data-end="1029"><span style="color: #000000;"><b>_  </b></span>Conteúdo completo</strong>: O que é UNFCCC, COP, Agenda de Ação, Protocolo de Quioto, Acordo de Paris, IPCC e muito mais.<br data-start="1094" data-end="1097" /><strong data-start="1099" data-end="1163"><span style="color: #000000;"><b>_  </b></span>Atividades diversar:</strong> Interpretação de texto, caça-palavras, labirinto, quebra-cabeça, produção de texto e muito mais.<br data-start="1164" data-end="1167" /><strong data-start="1169" data-end="1198"><span style="color: #000000;"><b>_  </b></span>Mascote da COP 30</strong>: Conheça o mascote, atividades para colorir e criação.<br data-start="1249" data-end="1252" /><strong data-start="1254" data-end="1313"><span style="color: #000000;"><b>_  </b></span>Belém, Amazônia e COP 30</strong>: Importância da Amazônia e atividades sobre a sede da COP 30 &#8211; Belém.<br data-start="1446" data-end="1449" /><strong data-start="1451" data-end="1471"><span style="color: #000000;"><b>_  </b></span>Gabarito incluso</strong> para facilitar o trabalho do professor.</p>                                                          </div>
+                                                                                                                                  </div>
+
+<!-- Seção Conteúdo COP30 Melhorada -->
+<div class="cop30-content-section">
+    <ul class="cop30-content-list">
+        <li class="cop30-content-item">
+            <span class="cop30-content-item-icon">📖</span>
+            <strong class="cop30-content-item-title">Explicação completa sobre a COP30</strong>
+            <p class="cop30-content-item-text">Linguagem acessível e diversos conteúdos sobre a COP 30.</p>
+        </li>
+        <li class="cop30-content-item">
+            <span class="cop30-content-item-icon">🌍</span>
+            <strong class="cop30-content-item-title">Conteúdo completo</strong>
+            <p class="cop30-content-item-text">O que é UNFCCC, COP, Agenda de Ação, Protocolo de Quioto, Acordo de Paris, IPCC e muito mais.</p>
+        </li>
+        <li class="cop30-content-item">
+            <span class="cop30-content-item-icon">✏️</span>
+            <strong class="cop30-content-item-title">Atividades diversas</strong>
+            <p class="cop30-content-item-text">Interpretação de texto, caça-palavras, labirinto, quebra-cabeça, produção de texto e muito mais.</p>
+        </li>
+        <li class="cop30-content-item">
+            <span class="cop30-content-item-icon">🦜</span>
+            <strong class="cop30-content-item-title">Mascote da COP 30</strong>
+            <p class="cop30-content-item-text">Conheça o mascote, atividades para colorir e criação.</p>
+        </li>
+        <li class="cop30-content-item">
+            <span class="cop30-content-item-icon">🌿</span>
+            <strong class="cop30-content-item-title">Belém, Amazônia e COP 30</strong>
+            <p class="cop30-content-item-text">Importância da Amazônia e atividades sobre a sede da COP 30 – Belém.</p>
+        </li>
+        <li class="cop30-content-item">
+            <span class="cop30-content-item-icon">✅</span>
+            <strong class="cop30-content-item-title">Gabarito incluso</strong>
+            <p class="cop30-content-item-text">Para facilitar o trabalho do professor.</p>
+        </li>
+    </ul>
+</div>
                                 </div>
                                 <div class="elementor-element elementor-element-822e191 elementor-widget elementor-widget-image" data-id="822e191" data-element_type="widget" data-widget_type="image.default">
                                 <div class="elementor-widget-container">
@@ -1479,6 +1804,52 @@ button#place_order {
                                 <div class="elementor-widget-container">
                                                                         <p><span style="color: #000000;">BÔNUS</span></p>                                                               </div>
                                 </div>
+
+<!-- Nova Seção de Bônus Criativos -->
+<div class="bonus-section">
+    <h2 class="bonus-title">🎁 BÔNUS EXCLUSIVOS 🎁</h2>
+    <p class="bonus-subtitle">Receba gratuitamente estes 3 materiais incríveis no Pacote Completo!</p>
+    
+    <div class="bonus-grid">
+        <div class="bonus-card">
+            <div class="bonus-card-icon">🌳</div>
+            <img src="attached_assets/generated_images/Kit_Atividades_Amazônia_Bônus_32c4f4ed.png" alt="Kit de Atividades da Amazônia" class="bonus-card-image">
+            <h3 class="bonus-card-title">Kit Atividades da Amazônia</h3>
+            <p class="bonus-card-description">
+                Material completo com atividades sobre biodiversidade amazônica, povos indígenas e preservação da floresta. Inclui jogos educativos, caça-palavras temático e projetos práticos.
+            </p>
+            <span class="bonus-value-badge">Valor: R$ 19,90</span>
+        </div>
+        
+        <div class="bonus-card">
+            <div class="bonus-card-icon">🏆</div>
+            <img src="attached_assets/generated_images/Certificado_Protetor_Ambiental_Bônus_b11c4736.png" alt="Certificado Protetor Ambiental" class="bonus-card-image">
+            <h3 class="bonus-card-title">Certificado Protetor Ambiental</h3>
+            <p class="bonus-card-description">
+                Certificados personalizáveis para reconhecer e valorizar o comprometimento dos alunos com o meio ambiente. Modelo editável em alta qualidade.
+            </p>
+            <span class="bonus-value-badge">Valor: R$ 14,90</span>
+        </div>
+        
+        <div class="bonus-card">
+            <div class="bonus-card-icon">📚</div>
+            <img src="attached_assets/generated_images/Guia_Projetos_Sustentáveis_Bônus_dbe577ae.png" alt="Guia de Projetos Sustentáveis" class="bonus-card-image">
+            <h3 class="bonus-card-title">Guia de Projetos Sustentáveis</h3>
+            <p class="bonus-card-description">
+                Guia prático com 10 ideias de projetos sustentáveis para aplicar na escola: reciclagem, horta escolar, economia de água e muito mais. Passo a passo detalhado.
+            </p>
+            <span class="bonus-value-badge">Valor: R$ 24,90</span>
+        </div>
+    </div>
+    
+    <p style="text-align: center; font-size: 24px; color: #2E7D32; font-weight: bold; margin-top: 40px; font-family: 'Chelsea Market', cursive;">
+        🎯 Total de Bônus: R$ 59,70 - GRÁTIS no Pacote Completo!
+    </p>
+</div>
+
+<div style="margin-top: 40px; text-align: center;">
+    <h3 style="font-family: 'Chelsea Market', cursive; font-size: 32px; color: #2E7D32; margin-bottom: 20px;">ALÉM DISSO, VOCÊ TAMBÉM RECEBE:</h3>
+</div>
                 <div class="elementor-element elementor-element-43861ae e-con-full e-flex e-con e-child" data-id="43861ae" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
                 <div class="elementor-element elementor-element-9ee1d8f e-con-full e-flex e-con e-child" data-id="9ee1d8f" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
                                 <div class="elementor-element elementor-element-3f82140 elementor-skin-coverflow elementor-arrows-yes elementor-pagination-type-bullets elementor-pagination-position-outside elementor-widget elementor-widget-media-carousel" data-id="3f82140" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;coverflow&quot;,&quot;slides_per_view&quot;:&quot;1&quot;,&quot;slides_per_view_tablet&quot;:&quot;1&quot;,&quot;slides_per_view_mobile&quot;:&quot;1&quot;,&quot;show_arrows&quot;:&quot;yes&quot;,&quot;pagination&quot;:&quot;bullets&quot;,&quot;speed&quot;:500,&quot;autoplay&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;loop&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]}}" data-widget_type="media-carousel.default">
@@ -1773,25 +2144,17 @@ button#place_order {
                 <div id="o-material-editvel" class="elementor-tab-title eael-accordion-header" tabindex="0" data-tab="2" aria-controls="elementor-tab-content-7452"><span class="eael-advanced-accordion-icon-closed"><i aria-hidden="true" class="fa-accordion-icon fas fa-plus"></i></span><span class="eael-advanced-accordion-icon-opened"><i aria-hidden="true" class="fa-accordion-icon fas fa-minus"></i></span><span class="eael-accordion-tab-title">O material é editável?</span><i aria-hidden="true" class="fa-toggle fas fa-angle-right"></i></div><div id="elementor-tab-content-7452" class="eael-accordion-content clearfix" data-tab="2" aria-labelledby="o-material-editvel"><p>Sim. O material é editável no Word.</p></div>
                 </div><div class="eael-accordion-list">
                 <div id="quais-os-meios-de-pagamentos" class="elementor-tab-title eael-accordion-header" tabindex="0" data-tab="3" aria-controls="elementor-tab-content-7453"><span class="eael-advanced-accordion-icon-closed"><i aria-hidden="true" class="fa-accordion-icon fas fa-plus"></i></span><span class="eael-advanced-accordion-icon-opened"><i aria-hidden="true" class="fa-accordion-icon fas fa-minus"></i></span><span class="eael-accordion-tab-title">Quais os meios de pagamentos?</span><i aria-hidden="true" class="fa-toggle fas fa-angle-right"></i></div><div id="elementor-tab-content-7453" class="eael-accordion-content clearfix" data-tab="3" aria-labelledby="quais-os-meios-de-pagamentos"><p>Pix e  Cartão de crédito.</p></div>
-                </div></div>                            </div>
-                                </div>
-                                        </div>
-                                </div>
-                <div class="elementor-element elementor-element-db95927 e-flex e-con-boxed e-con e-parent" data-id="db95927" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
-                                        <div  class="e-con-inner">
-                                <div class="elementor-element elementor-element-680687b elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-image" data-id="680687b" data-element_type="widget" data-widget_type="image.default">
-                                <div class="elementor-widget-container">
-                                                                                                                        <img decoding="async" width="800" height="173" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20173'%3E%3C/svg%3E" class="attachment-large size-large wp-image-1000" alt="" data-lazy-srcset="https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/02/Rodape-logos.png?w=1920&amp;ssl=1 1920w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/02/Rodape-logos.png?resize=300%2C65&amp;ssl=1 300w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/02/Rodape-logos.png?resize=1024%2C221&amp;ssl=1 1024w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/02/Rodape-logos.png?resize=768%2C166&amp;ssl=1 768w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/02/Rodape-logos.png?resize=1536%2C331&amp;ssl=1 1536w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/02/Rodape-logos.png?resize=600%2C129&amp;ssl=1 600w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/02/Rodape-logos.png?w=1600&amp;ssl=1 1600w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/02/Rodape-logos.png?fit=800%2C173&#038;ssl=1" /><noscript><img loading="lazy" decoding="async" width="800" height="173" src="https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/02/Rodape-logos.png?fit=800%2C173&amp;ssl=1" class="attachment-large size-large wp-image-1000" alt="" srcset="https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/02/Rodape-logos.png?w=1920&amp;ssl=1 1920w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/02/Rodape-logos.png?resize=300%2C65&amp;ssl=1 300w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/02/Rodape-logos.png?resize=1024%2C221&amp;ssl=1 1024w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/02/Rodape-logos.png?resize=768%2C166&amp;ssl=1 768w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/02/Rodape-logos.png?resize=1536%2C331&amp;ssl=1 1536w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/02/Rodape-logos.png?resize=600%2C129&amp;ssl=1 600w, https://i0.wp.com/atividadesdepedagogia.com.br/wp-content/uploads/2025/02/Rodape-logos.png?w=1600&amp;ssl=1 1600w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>                                                                                                                     </div>
-                                </div>
-                                        </div>
-                                </div>
-                <div class="elementor-element elementor-element-578c70a e-flex e-con-boxed e-con e-parent" data-id="578c70a" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
-                                        <div  class="e-con-inner">
-                                <div class="elementor-element elementor-element-806d401 elementor-widget elementor-widget-heading" data-id="806d401" data-element_type="widget" data-widget_type="heading.default">
-                                <div class="elementor-widget-container">
-                                        <h2 class="elementor-heading-title elementor-size-default">Todos os direitos reservados - Atividades de Pedagogia 2025 </h2>                            </div>
-                                </div>
-                                        </div>
+<div class="eael-accordion-list">
+                <div id="qual-diferenca-pacotes" class="elementor-tab-title eael-accordion-header" tabindex="0" data-tab="4" aria-controls="elementor-tab-content-7454"><span class="eael-advanced-accordion-icon-closed"><i aria-hidden="true" class="fa-accordion-icon fas fa-plus"></i></span><span class="eael-advanced-accordion-icon-opened"><i aria-hidden="true" class="fa-accordion-icon fas fa-minus"></i></span><span class="eael-accordion-tab-title">Qual a diferença entre o Pacote Simples e o Completo?</span><i aria-hidden="true" class="fa-toggle fas fa-angle-right"></i></div><div id="elementor-tab-content-7454" class="eael-accordion-content clearfix" data-tab="4" aria-labelledby="qual-diferenca-pacotes"><p>O <strong>Pacote Simples</strong> inclui todas as atividades da COP 30 com acesso por 6 meses. Já o <strong>Pacote Completo</strong> oferece acesso VITALÍCIO, 3 bônus exclusivos (Kit Amazônia, Certificado e Guia de Projetos), material editável, suporte personalizado e atualizações gratuitas.</p></div>
+                </div><div class="eael-accordion-list">
+                <div id="material-adaptado-series" class="elementor-tab-title eael-accordion-header" tabindex="0" data-tab="5" aria-controls="elementor-tab-content-7455"><span class="eael-advanced-accordion-icon-closed"><i aria-hidden="true" class="fa-accordion-icon fas fa-plus"></i></span><span class="eael-advanced-accordion-icon-opened"><i aria-hidden="true" class="fa-accordion-icon fas fa-minus"></i></span><span class="eael-accordion-tab-title">O material é adaptado para quais séries?</span><i aria-hidden="true" class="fa-toggle fas fa-angle-right"></i></div><div id="elementor-tab-content-7455" class="eael-accordion-content clearfix" data-tab="5" aria-labelledby="material-adaptado-series"><p>O material foi desenvolvido para ser versátil e pode ser adaptado do <strong>4º ao 9º ano do Ensino Fundamental</strong>. As atividades possuem diferentes níveis de complexidade e podem ser ajustadas conforme a necessidade de cada turma.</p></div>
+                </div><div class="eael-accordion-list">
+                <div id="preciso-internet" class="elementor-tab-title eael-accordion-header" tabindex="0" data-tab="6" aria-controls="elementor-tab-content-7456"><span class="eael-advanced-accordion-icon-closed"><i aria-hidden="true" class="fa-accordion-icon fas fa-plus"></i></span><span class="eael-advanced-accordion-icon-opened"><i aria-hidden="true" class="fa-accordion-icon fas fa-minus"></i></span><span class="eael-accordion-tab-title">Preciso de internet para usar o material?</span><i aria-hidden="true" class="fa-toggle fas fa-angle-right"></i></div><div id="elementor-tab-content-7456" class="eael-accordion-content clearfix" data-tab="6" aria-labelledby="preciso-internet"><p>Você precisará de internet apenas para <strong>fazer o download inicial do material</strong>. Após baixar os arquivos em PDF e Word, poderá utilizá-los offline, imprimir as atividades e trabalhar normalmente sem necessidade de conexão.</p></div>
+                </div><div class="eael-accordion-list">
+                <div id="posso-usar-mais-turmas" class="elementor-tab-title eael-accordion-header" tabindex="0" data-tab="7" aria-controls="elementor-tab-content-7457"><span class="eael-advanced-accordion-icon-closed"><i aria-hidden="true" class="fa-accordion-icon fas fa-plus"></i></span><span class="eael-advanced-accordion-icon-opened"><i aria-hidden="true" class="fa-accordion-icon fas fa-minus"></i></span><span class="eael-accordion-tab-title">Posso usar o material em mais de uma turma?</span><i aria-hidden="true" class="fa-toggle fas fa-angle-right"></i></div><div id="elementor-tab-content-7457" class="eael-accordion-content clearfix" data-tab="7" aria-labelledby="posso-usar-mais-turmas"><p>Sim! Você pode usar o material em <strong>quantas turmas quiser</strong>. Após a compra, o material é seu e você terá liberdade para imprimir e aplicar as atividades com todos os seus alunos, sem limitações.</p></div>
+                </div><div class="eael-accordion-list">
+                <div id="garantia-devolucao" class="elementor-tab-title eael-accordion-header" tabindex="0" data-tab="8" aria-controls="elementor-tab-content-7458"><span class="eael-advanced-accordion-icon-closed"><i aria-hidden="true" class="fa-accordion-icon fas fa-plus"></i></span><span class="eael-advanced-accordion-icon-opened"><i aria-hidden="true" class="fa-accordion-icon fas fa-minus"></i></span><span class="eael-accordion-tab-title">E se eu não gostar do material?</span><i aria-hidden="true" class="fa-toggle fas fa-angle-right"></i></div><div id="elementor-tab-content-7458" class="eael-accordion-content clearfix" data-tab="8" aria-labelledby="garantia-devolucao"><p>Temos <strong>garantia de 7 dias</strong>! Se você não ficar satisfeito com o material, devolvemos 100% do seu dinheiro, sem burocracia e sem perguntas. Sua satisfação é nossa prioridade.</p></div>
+                </div>
                                 </div>
                                 </div>
                 <script type="speculationrules">
@@ -2292,6 +2655,101 @@ document.addEventListener("DOMContentLoaded", function() {
         vejaComoSection.insertAdjacentHTML('beforebegin', garantiaHTML);
     }
 });
+
+// ========================================
+// POPUP DE COMPRA - NOTIFICAÇÕES
+// ========================================
+const purchaseNotifications = [
+    { name: "Ana Carolina", location: "São Paulo, SP", time: "3 minutos atrás" },
+    { name: "Maria Eduarda", location: "Rio de Janeiro, RJ", time: "5 minutos atrás" },
+    { name: "Juliana Santos", location: "Belo Horizonte, MG", time: "7 minutos atrás" },
+    { name: "Fernanda Lima", location: "Curitiba, PR", time: "4 minutos atrás" },
+    { name: "Patricia Alves", location: "Porto Alegre, RS", time: "6 minutos atrás" },
+    { name: "Camila Rodrigues", location: "Salvador, BA", time: "2 minutos atrás" },
+    { name: "Beatriz Costa", location: "Fortaleza, CE", time: "8 minutos atrás" },
+    { name: "Gabriela Mendes", location: "Brasília, DF", time: "5 minutos atrás" },
+    { name: "Luciana Oliveira", location: "Recife, PE", time: "3 minutos atrás" },
+    { name: "Roberto Silva", location: "Campinas, SP", time: "7 minutos atrás" },
+    { name: "Renata Ferreira", location: "Goiânia, GO", time: "4 minutos atrás" },
+    { name: "Amanda Souza", location: "Manaus, AM", time: "6 minutos atrás" },
+    { name: "Carolina Dias", location: "Belém, PA", time: "2 minutos atrás" },
+    { name: "Vanessa Martins", location: "Florianópolis, SC", time: "5 minutos atrás" },
+    { name: "Tatiana Pereira", location: "Vitória, ES", time: "3 minutos atrás" }
+];
+
+function createPurchasePopup() {
+    // Verificar se o popup já foi fechado nesta sessão
+    if (sessionStorage.getItem('popupClosed')) {
+        return;
+    }
+    
+    const popup = document.createElement('div');
+    popup.className = 'purchase-popup';
+    popup.style.display = 'none';
+    
+    const randomNotification = purchaseNotifications[Math.floor(Math.random() * purchaseNotifications.length)];
+    
+    popup.innerHTML = `
+        <button class="purchase-popup-close" onclick="closePurchasePopup()">&times;</button>
+        <div class="purchase-popup-header">
+            <div class="purchase-popup-icon">🎉</div>
+            <h4 class="purchase-popup-title">Nova Compra Realizada!</h4>
+        </div>
+        <div class="purchase-popup-content">
+            <span class="purchase-popup-name">${randomNotification.name}</span> de 
+            <span class="purchase-popup-location">${randomNotification.location}</span>
+        </div>
+        <div class="purchase-popup-product">
+            ✅ Pacote COP 30 COMPLETO
+        </div>
+        <div class="purchase-popup-time">
+            🕐 ${randomNotification.time}
+        </div>
+    `;
+    
+    document.body.appendChild(popup);
+    
+    // Mostrar popup após 5 segundos
+    setTimeout(() => {
+        popup.style.display = 'block';
+        
+        // Esconder automaticamente após 10 segundos
+        setTimeout(() => {
+            popup.style.display = 'none';
+            
+            // Mostrar próximo popup após intervalo aleatório (30-60 segundos)
+            setTimeout(showNextPopup, Math.random() * 30000 + 30000);
+        }, 10000);
+    }, 5000);
+}
+
+function showNextPopup() {
+    if (sessionStorage.getItem('popupClosed')) {
+        return;
+    }
+    
+    const existingPopup = document.querySelector('.purchase-popup');
+    if (existingPopup) {
+        existingPopup.remove();
+    }
+    
+    createPurchasePopup();
+}
+
+function closePurchasePopup() {
+    const popup = document.querySelector('.purchase-popup');
+    if (popup) {
+        popup.style.display = 'none';
+        sessionStorage.setItem('popupClosed', 'true');
+    }
+}
+
+// Iniciar popup quando a página carregar
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', createPurchasePopup);
+} else {
+    createPurchasePopup();
+}
 </script>
 </body>
 </html>
